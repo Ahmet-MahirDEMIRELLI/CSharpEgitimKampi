@@ -1,1 +1,24 @@
-C# Eğitim Kampı - [Murat Yücedağ](https://www.youtube.com/@MurattYucedag)
+# 🚀 [C# EĞİTİM KAMPI PROJELERİ](https://www.youtube.com/@MurattYucedag)
+
+Bu repo, Murat Yücedağ tarafından gerçekleştirilen C# Eğitim Kampı süresince tamamladığım projeleri içermektedir.
+
+## 📍 01: Main Subjects
+Bu projede Console.WriteLine() komutu ile consola yazı yazdırmayı öğrendim.
+
+## 📍 02: Variables
+Bu projede int, string, double gibi farklı veri türlerini ve bu değişkenler üzerinde işlem yapmayı öğrendim.
+
+## 📍 03: Making Decision
+Bu projede if, if-elseif kullanımını öğrendim.
+
+## 📍 04-05: Loops
+Bu projede for ve while döngüsü kullanmayı ve döngüler ile şekil yazdırmayı öğrendim.
+
+## 📍 06: Arrays
+Bu projede int, string ve char dizileri tanımlamayı ve döngü ile üzerinde işlem yapmayı öğrendim.
+
+## 📍 07: Foreach Loop
+Bu projede foreach döngüsünü kullanmayı ve diziler üzerinde kullanmayı öğrendim.
+
+## 📍 08: Methods
+Bu projede parametre alan/almayan void methodlar ve geriye değer döndüren methodları oluşturmayı ve kullanmayı öğrendim
