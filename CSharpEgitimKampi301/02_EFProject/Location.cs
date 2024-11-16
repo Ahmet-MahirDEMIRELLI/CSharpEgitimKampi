@@ -21,6 +21,7 @@ namespace _02_EFProject
         public Nullable<decimal> Price { get; set; }
         public string DayNight { get; set; }
         public Nullable<int> GuideId { get; set; }
+    
         public virtual Guide Guide { get; set; }
     }
 }

@@ -17,6 +17,6 @@ namespace _02_EFProject
         public int GuideId { get; set; }
         public string GuideName { get; set; }
         public string GuideSurname { get; set; }
-        public virtual ICollection<Location> Location { get; set; }
+        public virtual Location Location { get; set; }
     }
 }
