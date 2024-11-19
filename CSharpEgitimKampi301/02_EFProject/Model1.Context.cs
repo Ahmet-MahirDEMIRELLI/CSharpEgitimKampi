@@ -25,9 +25,9 @@ namespace _02_EFProject
             throw new UnintentionalCodeFirstException();
         }
     
+        public virtual DbSet<Admin> Admin { get; set; }
         public virtual DbSet<Customer> Customer { get; set; }
         public virtual DbSet<Guide> Guide { get; set; }
         public virtual DbSet<Location> Location { get; set; }
-        public virtual DbSet<Admin> Admin { get; set; }
     }
 }
