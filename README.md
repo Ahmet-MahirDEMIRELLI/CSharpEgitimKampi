@@ -21,7 +21,9 @@ Bu projede int, string ve char dizileri tanımlamayı ve döngü ile üzerinde i
 Bu projede foreach döngüsünü kullanmayı ve diziler üzerinde kullanmayı öğrendim.
 
 ## 📍 08: Methods
-Bu projede parametre alan/almayan void methodlar ve geriye değer döndüren methodları oluşturmayı ve kullanmayı öğrendim
+Bu projede parametre alan/almayan void methodlar ve geriye değer döndüren methodları oluşturmayı ve kullanmayı öğrendim.
 
 ## 📍 C# EĞİTİM KAMPI 301 - FrmStatistics
+Bu windows form projesinde Entity Framework-LinQ metodlarını kullanarak database'den veri çekmeyi ve bu verileri listelemeyi öğrendim.
+
 ![FrmStatistics](https://github.com/user-attachments/assets/da55d397-fcb9-4aab-81cc-d2170ad16fa0)
