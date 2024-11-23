@@ -22,3 +22,6 @@ Bu projede foreach döngüsünü kullanmayı ve diziler üzerinde kullanmayı ö
 
 ## 📍 08: Methods
 Bu projede parametre alan/almayan void methodlar ve geriye değer döndüren methodları oluşturmayı ve kullanmayı öğrendim
+
+## 📍 C# EĞİTİM KAMPI 301 - FrmStatistics
+![FrmStatistics](https://github.com/user-attachments/assets/da55d397-fcb9-4aab-81cc-d2170ad16fa0)
