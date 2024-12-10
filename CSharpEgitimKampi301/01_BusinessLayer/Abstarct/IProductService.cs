@@ -9,5 +9,6 @@ namespace _01_BusinessLayer.Abstarct
 {
 	public interface IProductService : IGenericService<Product>
 	{
+		List<ProductPretty> TGetProductsWithCategory();
 	}
 }

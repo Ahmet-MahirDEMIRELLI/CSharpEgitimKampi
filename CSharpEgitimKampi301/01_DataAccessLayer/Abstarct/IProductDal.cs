@@ -9,5 +9,6 @@ namespace _01_DataAccessLayer.Abstarct
 {
 	public interface IProductDal : IGenericDal<Product>
 	{
+		List<ProductPretty> GetProductsWithCategory();
 	}
 }
