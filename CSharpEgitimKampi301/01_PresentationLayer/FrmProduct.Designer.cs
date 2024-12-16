@@ -58,6 +58,7 @@
 			this.btnAdd.TabIndex = 26;
 			this.btnAdd.Text = "Ekle";
 			this.btnAdd.UseVisualStyleBackColor = true;
+			this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
 			// 
 			// btnDelete
 			// 
@@ -77,6 +78,7 @@
 			this.btnUpdate.TabIndex = 24;
 			this.btnUpdate.Text = "Güncelle";
 			this.btnUpdate.UseVisualStyleBackColor = true;
+			this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
 			// 
 			// btnGetById
 			// 
@@ -86,6 +88,7 @@
 			this.btnGetById.TabIndex = 23;
 			this.btnGetById.Text = "ID\'ye Göre Getir";
 			this.btnGetById.UseVisualStyleBackColor = true;
+			this.btnGetById.Click += new System.EventHandler(this.btnGetById_Click);
 			// 
 			// txtProductName
 			// 
@@ -241,6 +244,7 @@
 			this.Controls.Add(this.label1);
 			this.Name = "FrmProduct";
 			this.Text = "FrmProduct";
+			this.Load += new System.EventHandler(this.FrmProduct_Load);
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
