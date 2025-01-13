@@ -7,9 +7,11 @@ namespace FinancialCrm
 {
 	public partial class FrmBilling : Form
 	{
-		public FrmBilling()
+		private int _userId;
+		public FrmBilling(int userId)
 		{
 			InitializeComponent();
+			_userId = userId;
 		}
 
 		FinancialCrmDbEntities db = new FinancialCrmDbEntities();
@@ -74,9 +76,49 @@ namespace FinancialCrm
 
 		private void btnBanksForm_Click(object sender, EventArgs e)
 		{
-			FrmBanks frm = new FrmBanks();
+			FrmBanks frm = new FrmBanks(_userId);
 			frm.Show();
-			this.Hide();
+			this.Close();
+		}
+
+		private void btnDashboard_Click(object sender, EventArgs e)
+		{
+			FrmDashboard frm = new FrmDashboard(_userId);
+			frm.Show();
+			this.Close();
+		}
+
+		private void btnBankProcesses_Click(object sender, EventArgs e)
+		{
+			FrmProcesses frm = new FrmProcesses(_userId);
+			frm.Show();
+			this.Close();
+		}
+
+		private void btnCategories_Click(object sender, EventArgs e)
+		{
+			FrmCategories frm = new FrmCategories(_userId);
+			frm.Show();
+			this.Close();
+		}
+
+		private void btnLogOut_Click(object sender, EventArgs e)
+		{
+			Application.Exit();
+		}
+
+		private void btnBills_Click(object sender, EventArgs e)
+		{
+			FrmBills frm = new FrmBills(_userId);
+			frm.Show();
+			this.Close();
+		}
+
+		private void btnSettings_Click(object sender, EventArgs e)
+		{
+			FrmSettings frm = new FrmSettings(_userId);
+			frm.Show();
+			this.Close();
 		}
 	}
 }

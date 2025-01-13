@@ -29,12 +29,12 @@
 		private void InitializeComponent()
 		{
 			this.components = new System.ComponentModel.Container();
-			System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-			System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-			System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-			System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-			System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-			System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+			System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+			System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+			System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+			System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+			System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+			System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
 			this.lblLastBankProcessAmount = new System.Windows.Forms.Label();
 			this.pnlIs = new System.Windows.Forms.Panel();
 			this.label4 = new System.Windows.Forms.Label();
@@ -59,8 +59,8 @@
 			this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
 			this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
 			this.panel3 = new System.Windows.Forms.Panel();
-			this.panel4 = new System.Windows.Forms.Panel();
 			this.label3 = new System.Windows.Forms.Label();
+			this.panel4 = new System.Windows.Forms.Panel();
 			this.label5 = new System.Windows.Forms.Label();
 			this.pnlIs.SuspendLayout();
 			this.pnlVakıf.SuspendLayout();
@@ -194,6 +194,7 @@
 			this.btnLogOut.TabIndex = 7;
 			this.btnLogOut.Text = "Çıkış Yap";
 			this.btnLogOut.UseVisualStyleBackColor = false;
+			this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
 			// 
 			// btnSettings
 			// 
@@ -206,6 +207,7 @@
 			this.btnSettings.TabIndex = 6;
 			this.btnSettings.Text = "Ayarlar";
 			this.btnSettings.UseVisualStyleBackColor = false;
+			this.btnSettings.Click += new System.EventHandler(this.btnSettings_Click);
 			// 
 			// btnDashboard
 			// 
@@ -230,6 +232,7 @@
 			this.btnBankProcesses.TabIndex = 4;
 			this.btnBankProcesses.Text = "Banka Hareketleri";
 			this.btnBankProcesses.UseVisualStyleBackColor = false;
+			this.btnBankProcesses.Click += new System.EventHandler(this.btnBankProcesses_Click);
 			// 
 			// btnSpendingsForm
 			// 
@@ -242,6 +245,7 @@
 			this.btnSpendingsForm.TabIndex = 3;
 			this.btnSpendingsForm.Text = "Giderler";
 			this.btnSpendingsForm.UseVisualStyleBackColor = false;
+			this.btnSpendingsForm.Click += new System.EventHandler(this.btnSpendingsForm_Click);
 			// 
 			// btnBills
 			// 
@@ -254,6 +258,7 @@
 			this.btnBills.TabIndex = 2;
 			this.btnBills.Text = "Faturalar";
 			this.btnBills.UseVisualStyleBackColor = false;
+			this.btnBills.Click += new System.EventHandler(this.btnBills_Click);
 			// 
 			// btnBanks
 			// 
@@ -266,6 +271,7 @@
 			this.btnBanks.TabIndex = 1;
 			this.btnBanks.Text = "Bankalar";
 			this.btnBanks.UseVisualStyleBackColor = false;
+			this.btnBanks.Click += new System.EventHandler(this.btnBanks_Click);
 			// 
 			// btnCategories
 			// 
@@ -278,6 +284,7 @@
 			this.btnCategories.TabIndex = 0;
 			this.btnCategories.Text = "Kategoriler";
 			this.btnCategories.UseVisualStyleBackColor = false;
+			this.btnCategories.Click += new System.EventHandler(this.btnCategories_Click);
 			// 
 			// panel1
 			// 
@@ -303,33 +310,33 @@
 			// 
 			// chart1
 			// 
-			chartArea1.Name = "ChartArea1";
-			this.chart1.ChartAreas.Add(chartArea1);
-			legend1.Name = "Legend1";
-			this.chart1.Legends.Add(legend1);
+			chartArea3.Name = "ChartArea1";
+			this.chart1.ChartAreas.Add(chartArea3);
+			legend3.Name = "Legend1";
+			this.chart1.Legends.Add(legend3);
 			this.chart1.Location = new System.Drawing.Point(227, 269);
 			this.chart1.Name = "chart1";
-			series1.ChartArea = "ChartArea1";
-			series1.Legend = "Legend1";
-			series1.Name = "Bakiyeler";
-			this.chart1.Series.Add(series1);
+			series3.ChartArea = "ChartArea1";
+			series3.Legend = "Legend1";
+			series3.Name = "Bakiyeler";
+			this.chart1.Series.Add(series3);
 			this.chart1.Size = new System.Drawing.Size(340, 207);
 			this.chart1.TabIndex = 12;
 			this.chart1.Text = "chart1";
 			// 
 			// chart2
 			// 
-			chartArea2.Name = "ChartArea1";
-			this.chart2.ChartAreas.Add(chartArea2);
-			legend2.Name = "Legend1";
-			this.chart2.Legends.Add(legend2);
+			chartArea4.Name = "ChartArea1";
+			this.chart2.ChartAreas.Add(chartArea4);
+			legend4.Name = "Legend1";
+			this.chart2.Legends.Add(legend4);
 			this.chart2.Location = new System.Drawing.Point(615, 269);
 			this.chart2.Name = "chart2";
-			series2.ChartArea = "ChartArea1";
-			series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-			series2.Legend = "Legend1";
-			series2.Name = "Faturalar";
-			this.chart2.Series.Add(series2);
+			series4.ChartArea = "ChartArea1";
+			series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+			series4.Legend = "Legend1";
+			series4.Name = "Faturalar";
+			this.chart2.Series.Add(series4);
 			this.chart2.Size = new System.Drawing.Size(340, 207);
 			this.chart2.TabIndex = 13;
 			this.chart2.Text = "chart2";
@@ -343,15 +350,6 @@
 			this.panel3.Size = new System.Drawing.Size(340, 41);
 			this.panel3.TabIndex = 14;
 			// 
-			// panel4
-			// 
-			this.panel4.BackColor = System.Drawing.SystemColors.GrayText;
-			this.panel4.Controls.Add(this.label5);
-			this.panel4.Location = new System.Drawing.Point(615, 222);
-			this.panel4.Name = "panel4";
-			this.panel4.Size = new System.Drawing.Size(340, 41);
-			this.panel4.TabIndex = 15;
-			// 
 			// label3
 			// 
 			this.label3.AutoSize = true;
@@ -362,6 +360,15 @@
 			this.label3.Size = new System.Drawing.Size(230, 21);
 			this.label3.TabIndex = 16;
 			this.label3.Text = "Bankalarınızdaki para miktarları";
+			// 
+			// panel4
+			// 
+			this.panel4.BackColor = System.Drawing.SystemColors.GrayText;
+			this.panel4.Controls.Add(this.label5);
+			this.panel4.Location = new System.Drawing.Point(615, 222);
+			this.panel4.Name = "panel4";
+			this.panel4.Size = new System.Drawing.Size(340, 41);
+			this.panel4.TabIndex = 15;
 			// 
 			// label5
 			// 
@@ -389,6 +396,7 @@
 			this.Controls.Add(this.panel2);
 			this.Controls.Add(this.panel1);
 			this.Name = "FrmDashboard";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "FrmDashboard";
 			this.Load += new System.EventHandler(this.FrmDashboard_Load);
 			this.pnlIs.ResumeLayout(false);

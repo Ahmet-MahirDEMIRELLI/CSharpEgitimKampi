@@ -13,9 +13,11 @@ namespace FinancialCrm
 {
 	public partial class FrmDashboard : Form
 	{
-		public FrmDashboard()
+		private int _userId;
+		public FrmDashboard(int userId)
 		{
 			InitializeComponent();
+			_userId = userId;
 		}
 
 		FinancialCrmDbEntities db = new FinancialCrmDbEntities();
@@ -74,6 +76,53 @@ namespace FinancialCrm
 					lblBillAmount.Text = db.Bills.Where(x => x.BillTitle == "İnternet Faturası").Select(y => y.BillAmount).FirstOrDefault().ToString() + " ₺";
 					break;
 			}
+		}
+
+		private void btnBanks_Click(object sender, EventArgs e)
+		{
+			FrmBanks frm = new FrmBanks(_userId);
+			frm.Show();
+			this.Close();
+		}
+
+		private void btnSpendingsForm_Click(object sender, EventArgs e)
+		{
+			FrmBilling frm = new FrmBilling(_userId);
+			frm.Show();
+			this.Close();
+		}
+
+		private void btnBankProcesses_Click(object sender, EventArgs e)
+		{
+			FrmProcesses frm = new FrmProcesses(_userId);
+			frm.Show();
+			this.Close();
+		}
+
+		private void btnCategories_Click(object sender, EventArgs e)
+		{
+			FrmCategories frm = new FrmCategories(_userId);
+			frm.Show();
+			this.Close();
+		}
+
+		private void btnLogOut_Click(object sender, EventArgs e)
+		{
+			Application.Exit();
+		}
+
+		private void btnBills_Click(object sender, EventArgs e)
+		{
+			FrmBills frm = new FrmBills(_userId);
+			frm.Show();
+			this.Close();
+		}
+
+		private void btnSettings_Click(object sender, EventArgs e)
+		{
+			FrmSettings frm = new FrmSettings(_userId);
+			frm.Show();
+			this.Close();
 		}
 	}
 }

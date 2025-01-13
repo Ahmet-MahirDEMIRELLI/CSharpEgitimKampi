@@ -40,19 +40,19 @@
 			this.panel2 = new System.Windows.Forms.Panel();
 			this.label1 = new System.Windows.Forms.Label();
 			this.panel3 = new System.Windows.Forms.Panel();
-			this.panel4 = new System.Windows.Forms.Panel();
-			this.lblBillId = new System.Windows.Forms.Label();
-			this.txtBillId = new System.Windows.Forms.TextBox();
-			this.txtTitle = new System.Windows.Forms.TextBox();
-			this.lblTitle = new System.Windows.Forms.Label();
-			this.txtAmount = new System.Windows.Forms.TextBox();
-			this.lblAmount = new System.Windows.Forms.Label();
+			this.btnDelete = new System.Windows.Forms.Button();
+			this.btnUpdate = new System.Windows.Forms.Button();
+			this.btnAdd = new System.Windows.Forms.Button();
+			this.btnList = new System.Windows.Forms.Button();
 			this.txtPeriod = new System.Windows.Forms.TextBox();
 			this.lblPeriod = new System.Windows.Forms.Label();
-			this.btnList = new System.Windows.Forms.Button();
-			this.btnAdd = new System.Windows.Forms.Button();
-			this.btnUpdate = new System.Windows.Forms.Button();
-			this.btnDelete = new System.Windows.Forms.Button();
+			this.txtAmount = new System.Windows.Forms.TextBox();
+			this.lblAmount = new System.Windows.Forms.Label();
+			this.txtTitle = new System.Windows.Forms.TextBox();
+			this.lblTitle = new System.Windows.Forms.Label();
+			this.txtBillId = new System.Windows.Forms.TextBox();
+			this.lblBillId = new System.Windows.Forms.Label();
+			this.panel4 = new System.Windows.Forms.Panel();
 			this.dataGridView1 = new System.Windows.Forms.DataGridView();
 			this.panel1.SuspendLayout();
 			this.panel2.SuspendLayout();
@@ -88,6 +88,7 @@
 			this.btnLogOut.TabIndex = 7;
 			this.btnLogOut.Text = "Çıkış Yap";
 			this.btnLogOut.UseVisualStyleBackColor = false;
+			this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
 			// 
 			// btnSettings
 			// 
@@ -100,6 +101,7 @@
 			this.btnSettings.TabIndex = 6;
 			this.btnSettings.Text = "Ayarlar";
 			this.btnSettings.UseVisualStyleBackColor = false;
+			this.btnSettings.Click += new System.EventHandler(this.btnSettings_Click);
 			// 
 			// btnDashboard
 			// 
@@ -112,6 +114,7 @@
 			this.btnDashboard.TabIndex = 5;
 			this.btnDashboard.Text = "Dashboard";
 			this.btnDashboard.UseVisualStyleBackColor = false;
+			this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
 			// 
 			// btnBankProcesses
 			// 
@@ -124,6 +127,7 @@
 			this.btnBankProcesses.TabIndex = 4;
 			this.btnBankProcesses.Text = "Banka Hareketleri";
 			this.btnBankProcesses.UseVisualStyleBackColor = false;
+			this.btnBankProcesses.Click += new System.EventHandler(this.btnBankProcesses_Click);
 			// 
 			// btnSpendings
 			// 
@@ -148,6 +152,7 @@
 			this.btnBills.TabIndex = 2;
 			this.btnBills.Text = "Faturalar";
 			this.btnBills.UseVisualStyleBackColor = false;
+			this.btnBills.Click += new System.EventHandler(this.btnBills_Click);
 			// 
 			// btnBanksForm
 			// 
@@ -173,6 +178,7 @@
 			this.btnCategories.TabIndex = 0;
 			this.btnCategories.Text = "Kategoriler";
 			this.btnCategories.UseVisualStyleBackColor = false;
+			this.btnCategories.Click += new System.EventHandler(this.btnCategories_Click);
 			// 
 			// panel2
 			// 
@@ -190,9 +196,9 @@
 			this.label1.ForeColor = System.Drawing.Color.White;
 			this.label1.Location = new System.Drawing.Point(12, 22);
 			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(122, 24);
+			this.label1.Size = new System.Drawing.Size(198, 24);
 			this.label1.TabIndex = 2;
-			this.label1.Text = "Fatura Formu";
+			this.label1.Text = "Fatura İşlemleri Formu";
 			// 
 			// panel3
 			// 
@@ -213,67 +219,61 @@
 			this.panel3.Size = new System.Drawing.Size(741, 165);
 			this.panel3.TabIndex = 3;
 			// 
-			// panel4
+			// btnDelete
 			// 
-			this.panel4.Controls.Add(this.dataGridView1);
-			this.panel4.Location = new System.Drawing.Point(214, 248);
-			this.panel4.Name = "panel4";
-			this.panel4.Size = new System.Drawing.Size(741, 233);
-			this.panel4.TabIndex = 4;
+			this.btnDelete.BackColor = System.Drawing.Color.DimGray;
+			this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnDelete.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.btnDelete.ForeColor = System.Drawing.SystemColors.ButtonFace;
+			this.btnDelete.Location = new System.Drawing.Point(558, 38);
+			this.btnDelete.Name = "btnDelete";
+			this.btnDelete.Size = new System.Drawing.Size(170, 38);
+			this.btnDelete.TabIndex = 17;
+			this.btnDelete.Text = "Ödeme Sil";
+			this.btnDelete.UseVisualStyleBackColor = false;
+			this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
 			// 
-			// lblBillId
+			// btnUpdate
 			// 
-			this.lblBillId.AutoSize = true;
-			this.lblBillId.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.lblBillId.Location = new System.Drawing.Point(4, 17);
-			this.lblBillId.Name = "lblBillId";
-			this.lblBillId.Size = new System.Drawing.Size(82, 21);
-			this.lblBillId.TabIndex = 8;
-			this.lblBillId.Text = "Ödeme Id:";
+			this.btnUpdate.BackColor = System.Drawing.Color.DimGray;
+			this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnUpdate.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.btnUpdate.ForeColor = System.Drawing.SystemColors.ButtonFace;
+			this.btnUpdate.Location = new System.Drawing.Point(558, 93);
+			this.btnUpdate.Name = "btnUpdate";
+			this.btnUpdate.Size = new System.Drawing.Size(170, 38);
+			this.btnUpdate.TabIndex = 16;
+			this.btnUpdate.Text = "Ödeme Güncelle";
+			this.btnUpdate.UseVisualStyleBackColor = false;
+			this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
 			// 
-			// txtBillId
+			// btnAdd
 			// 
-			this.txtBillId.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.txtBillId.Location = new System.Drawing.Point(92, 11);
-			this.txtBillId.Name = "txtBillId";
-			this.txtBillId.Size = new System.Drawing.Size(202, 28);
-			this.txtBillId.TabIndex = 8;
+			this.btnAdd.BackColor = System.Drawing.Color.DimGray;
+			this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnAdd.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.btnAdd.ForeColor = System.Drawing.SystemColors.ButtonFace;
+			this.btnAdd.Location = new System.Drawing.Point(357, 93);
+			this.btnAdd.Name = "btnAdd";
+			this.btnAdd.Size = new System.Drawing.Size(170, 38);
+			this.btnAdd.TabIndex = 15;
+			this.btnAdd.Text = "Yeni Ödeme";
+			this.btnAdd.UseVisualStyleBackColor = false;
+			this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
 			// 
-			// txtTitle
+			// btnList
 			// 
-			this.txtTitle.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.txtTitle.Location = new System.Drawing.Point(92, 49);
-			this.txtTitle.Name = "txtTitle";
-			this.txtTitle.Size = new System.Drawing.Size(202, 32);
-			this.txtTitle.TabIndex = 9;
-			// 
-			// lblTitle
-			// 
-			this.lblTitle.AutoSize = true;
-			this.lblTitle.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.lblTitle.Location = new System.Drawing.Point(31, 55);
-			this.lblTitle.Name = "lblTitle";
-			this.lblTitle.Size = new System.Drawing.Size(55, 21);
-			this.lblTitle.TabIndex = 10;
-			this.lblTitle.Text = "Başlık:";
-			// 
-			// txtAmount
-			// 
-			this.txtAmount.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.txtAmount.Location = new System.Drawing.Point(92, 87);
-			this.txtAmount.Name = "txtAmount";
-			this.txtAmount.Size = new System.Drawing.Size(202, 32);
-			this.txtAmount.TabIndex = 11;
-			// 
-			// lblAmount
-			// 
-			this.lblAmount.AutoSize = true;
-			this.lblAmount.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.lblAmount.Location = new System.Drawing.Point(24, 93);
-			this.lblAmount.Name = "lblAmount";
-			this.lblAmount.Size = new System.Drawing.Size(62, 21);
-			this.lblAmount.TabIndex = 12;
-			this.lblAmount.Text = "Miktar:";
+			this.btnList.BackColor = System.Drawing.Color.DimGray;
+			this.btnList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnList.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.btnList.ForeColor = System.Drawing.SystemColors.ButtonFace;
+			this.btnList.Location = new System.Drawing.Point(357, 38);
+			this.btnList.Name = "btnList";
+			this.btnList.Size = new System.Drawing.Size(170, 38);
+			this.btnList.TabIndex = 8;
+			this.btnList.Text = "Ödeme Listesi";
+			this.btnList.UseVisualStyleBackColor = false;
+			this.btnList.Click += new System.EventHandler(this.btnList_Click);
 			// 
 			// txtPeriod
 			// 
@@ -293,61 +293,67 @@
 			this.lblPeriod.TabIndex = 14;
 			this.lblPeriod.Text = "Periyot:";
 			// 
-			// btnList
+			// txtAmount
 			// 
-			this.btnList.BackColor = System.Drawing.Color.DimGray;
-			this.btnList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.btnList.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.btnList.ForeColor = System.Drawing.SystemColors.ButtonFace;
-			this.btnList.Location = new System.Drawing.Point(357, 38);
-			this.btnList.Name = "btnList";
-			this.btnList.Size = new System.Drawing.Size(170, 38);
-			this.btnList.TabIndex = 8;
-			this.btnList.Text = "Ödeme Listesi";
-			this.btnList.UseVisualStyleBackColor = false;
-			this.btnList.Click += new System.EventHandler(this.btnList_Click);
+			this.txtAmount.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.txtAmount.Location = new System.Drawing.Point(92, 87);
+			this.txtAmount.Name = "txtAmount";
+			this.txtAmount.Size = new System.Drawing.Size(202, 32);
+			this.txtAmount.TabIndex = 11;
 			// 
-			// btnAdd
+			// lblAmount
 			// 
-			this.btnAdd.BackColor = System.Drawing.Color.DimGray;
-			this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.btnAdd.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.btnAdd.ForeColor = System.Drawing.SystemColors.ButtonFace;
-			this.btnAdd.Location = new System.Drawing.Point(357, 93);
-			this.btnAdd.Name = "btnAdd";
-			this.btnAdd.Size = new System.Drawing.Size(170, 38);
-			this.btnAdd.TabIndex = 15;
-			this.btnAdd.Text = "Yeni Ödeme";
-			this.btnAdd.UseVisualStyleBackColor = false;
-			this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+			this.lblAmount.AutoSize = true;
+			this.lblAmount.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.lblAmount.Location = new System.Drawing.Point(24, 93);
+			this.lblAmount.Name = "lblAmount";
+			this.lblAmount.Size = new System.Drawing.Size(62, 21);
+			this.lblAmount.TabIndex = 12;
+			this.lblAmount.Text = "Miktar:";
 			// 
-			// btnUpdate
+			// txtTitle
 			// 
-			this.btnUpdate.BackColor = System.Drawing.Color.DimGray;
-			this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.btnUpdate.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.btnUpdate.ForeColor = System.Drawing.SystemColors.ButtonFace;
-			this.btnUpdate.Location = new System.Drawing.Point(558, 93);
-			this.btnUpdate.Name = "btnUpdate";
-			this.btnUpdate.Size = new System.Drawing.Size(170, 38);
-			this.btnUpdate.TabIndex = 16;
-			this.btnUpdate.Text = "Ödeme Güncelle";
-			this.btnUpdate.UseVisualStyleBackColor = false;
-			this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
+			this.txtTitle.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.txtTitle.Location = new System.Drawing.Point(92, 49);
+			this.txtTitle.Name = "txtTitle";
+			this.txtTitle.Size = new System.Drawing.Size(202, 32);
+			this.txtTitle.TabIndex = 9;
 			// 
-			// btnDelete
+			// lblTitle
 			// 
-			this.btnDelete.BackColor = System.Drawing.Color.DimGray;
-			this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.btnDelete.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.btnDelete.ForeColor = System.Drawing.SystemColors.ButtonFace;
-			this.btnDelete.Location = new System.Drawing.Point(558, 38);
-			this.btnDelete.Name = "btnDelete";
-			this.btnDelete.Size = new System.Drawing.Size(170, 38);
-			this.btnDelete.TabIndex = 17;
-			this.btnDelete.Text = "Ödeme Sil";
-			this.btnDelete.UseVisualStyleBackColor = false;
-			this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+			this.lblTitle.AutoSize = true;
+			this.lblTitle.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.lblTitle.Location = new System.Drawing.Point(31, 55);
+			this.lblTitle.Name = "lblTitle";
+			this.lblTitle.Size = new System.Drawing.Size(55, 21);
+			this.lblTitle.TabIndex = 10;
+			this.lblTitle.Text = "Başlık:";
+			// 
+			// txtBillId
+			// 
+			this.txtBillId.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.txtBillId.Location = new System.Drawing.Point(92, 11);
+			this.txtBillId.Name = "txtBillId";
+			this.txtBillId.Size = new System.Drawing.Size(202, 28);
+			this.txtBillId.TabIndex = 8;
+			// 
+			// lblBillId
+			// 
+			this.lblBillId.AutoSize = true;
+			this.lblBillId.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.lblBillId.Location = new System.Drawing.Point(4, 17);
+			this.lblBillId.Name = "lblBillId";
+			this.lblBillId.Size = new System.Drawing.Size(82, 21);
+			this.lblBillId.TabIndex = 8;
+			this.lblBillId.Text = "Ödeme Id:";
+			// 
+			// panel4
+			// 
+			this.panel4.Controls.Add(this.dataGridView1);
+			this.panel4.Location = new System.Drawing.Point(214, 248);
+			this.panel4.Name = "panel4";
+			this.panel4.Size = new System.Drawing.Size(741, 233);
+			this.panel4.TabIndex = 4;
 			// 
 			// dataGridView1
 			// 
